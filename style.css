@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    font-family: 'Libre Franklin', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+:root{
+    --Blue: hsl(223, 87%, 63%);
+    --PaleBlue: hsl(223, 100%, 88%);
+    --LightRed: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+body{
+    padding: 160px 50px 70px 50px;
+    text-align: center;
+}
+
+.logo{
+    margin-bottom: 70px;
+}
+
+h1{
+    margin-bottom: 45px;
+    font-weight: 300;
+    color: var(--Gray); 
+
+}
+
+span{
+    font-weight: 700;
+    color: var(--VeryDarkBlue);
+}
+
+.text1{
+    margin-bottom: 70px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-bottom: 10px;
+    border:1px solid var(--PaleBlue);
+    font-size: 1rem;
+    outline: none;
+}
+
+input::placeholder{
+    color: var(--PaleBlue);
+}
+
+button{
+    border: none;
+    background-color: var(--Blue);
+    color: white;
+    margin-bottom: 129px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.inputEmail{
+    padding: 30px;
+    border-radius: 5rem;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+small{
+    text-align: left;
+    margin-left: 30px;
+    font-style: italic;
+    color:var(--LightRed);
+    font-size: 15px;
+}
+
+.dashboard{
+    width: 100%;
+    margin-bottom: 260px;
+}
+
+nav{
+    margin-bottom: 60px;
+}
+
+i{
+  color: var(--Blue);
+  border: 1px solid var(--PaleBlue);
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 20px;
+  margin-right: 20px;
+}
+ 
+i:hover{
+    color: white;
+    background-color: var(--Blue);
+    border: none;
+}
+
+.footerText{
+    color: var(--Gray);
+    font-size: 12px;
+}
+
+@media screen and (min-width:600px) {
+   body{
+    width: 944px;
+    margin: 0 auto;
+   }
+   
+    form{
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+    .inputEmail{
+        padding: 20px;
+        height: 56%;
+    }
+
+    input{
+        width:100%;
+    }
+     div{
+        width: 60%;
+        height: 56%;
+     }
+    button{
+        text-align: center;
+        width: 20%;
+        margin-left: 20px;
+    }
+
+
+}
